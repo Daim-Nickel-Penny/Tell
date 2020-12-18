@@ -13,6 +13,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import db from "./firebase";
 import firebase from "firebase";
+import Emotes from "./Emotes";
 
 const Chat = () => {
   const user = useSelector(selectUser);
@@ -85,7 +86,8 @@ const Chat = () => {
         <div className="chat__inputIcon">
           <CradGiftcardIcon fontSize="large" />
           <GifIcon fontSize="large" />
-          <EmojiEmoticonsIcon fontSize="large" />
+          {/* <EmojiEmoticonsIcon fontSize="large" /> */}
+          <Emotes />
         </div>
       </div>
     </div>
